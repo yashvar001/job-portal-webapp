@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="text-center mb-4 fw-bold">Latest Opportunities</h2>
+
+<div class="row">
+    {% for job in jobs %}
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 h-100">
+            <div class="card-body">
+                <h5 class="fw-bold text-primary">{{ job.title }}</h5>
+                <p class="mb-1"><strong>Company:</strong> {{ job.company }}</p>
+                <p class="mb-1"><strong>Location:</strong> {{ job.location }}</p>
+                <p class="mb-1"><strong>Salary:</strong> {{ job.salary }}</p>
+                <p class="mt-2">{{ job.description }}</p>
+                <button class="btn btn-outline-success btn-sm mt-2">Apply Now</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

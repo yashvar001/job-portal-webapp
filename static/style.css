@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+footer {
+    font-size: 14px;
+}
